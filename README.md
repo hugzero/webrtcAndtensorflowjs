@@ -7,6 +7,8 @@
     https://www.jianshu.com/p/762a4587346d
 3.在idea或者webstrom中直接打开网页
 4.在框中输入自己的rtsp地址播放
+```
+![](https://github.com/hugzero/webrtcAndtensorflowjs/blob/master/image/test.png)
 
 
 
