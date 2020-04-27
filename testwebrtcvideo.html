@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset=utf-8>
+    <title>PoseNet - Camera Feed Demo</title>
+    <script src="js/tensorflow.js"></script>
+
+    <script src="js/postnetlocal.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ekko-lightbox.min.css">
+    <link rel="stylesheet" href="css/kurento.css">
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ekko-lightbox.min.js"></script>
+    <script src="js/adapter.js"></script>
+
+
+    <script src="js/kurento-utils.js"></script>
+    <script src="js/console.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/kurento-client.js"></script>
+</head>
+<body>
+<div id="info" style="display:none">
+</div>
+<div id="loading">
+    Loading the model...
+</div>
+
+<div style="position: relative" class="margin" id="main">
+    <!--                <video src="bbt.mp4" id="video" autoplay muted loop ></video>-->
+    <video id="video" autoplay="" muted="" loop="" poster="webrtc.png" width="480px" height="360px"></video>
+<!--    <video id="video" autoplay="" muted="" loop="" poster="webrtc.png" width="224" height="224px"></video>-->
+    Set source URL: <input style="width:350px;" id="address" type="text"><br>
+    <div class="col-md-2">
+        <a id="start" href="#" class="btn btn-success"><span></span> Start</a><br> <br> <a id="stop" href="#" class="btn btn-danger"><span></span> Stop</a>
+    </div>
+    <canvas id="output">
+
+    </canvas></div>
+<div class="row">
+    <div class="col-md-12">
+        <label class="control-label" for="console">Console</label>
+        <div id="console"></div>
+    </div>
+</div>
+
+<script src="js/version/webrtcvideo_0426_01_base.js">
+</script>
+</body>
+</html>
